@@ -151,31 +151,22 @@
   linewidth=2pt
   }
   % Eye Catcher
-  {\includegraphics[height=8.5em]{images/logo1}} 
+  {\includegraphics[height=3.25em]{images/logo1-2.jpeg}} 
   % Title
-  {\bf\Large{Dynamics of photo-excited Ba$^+$ cations in helium nanodroplets}\vspace{0.5em}}
+  {\bf\Large{Head-on collisions of Xe atoms against superfluid $^4$He nanodroplets}\vspace{0.5em}}
   % Authors
-  {\normalsize{ \underline{A. Leal},$^1$ M.Barranco,$^1$ F. Cargnoni,$^2$ M. Drabbels,$^3$ A. Hernando,$^4$ D. Mateo,$^1$ M. Mella,$^5$ M. Pi$^1$\vspace{0.5em}} \\
-\smaller{$^1$Departament E.C.M., Facultat de F\'isica, and IN$^2$UB, Universitat de Barcelona, Diagonal 645, E-08028 Barcelona, Spain 
+  {\normalsize{ \underline{F. Coppens},$^1$ A. Leal,$^2$ M. Barranco,$^2$ N. Halberstadt,$^1$ M. Pi,$^2$\vspace{0.5em}} \\
+\smaller{$^1$Universit\'e Toulouse 3 and CNRS, Laboratoire des Collisions, Agr\'egats, R\'eactivit\'e, IRSAMC, UMR 5589, 118 route de Narbonne, F-31062 Toulouse Cedex 09, France 
 \\ \vspace{2px}
-$^2$Instituto di Scienze e Tecnologie Molecolari (ISTM), Consiglio Nazionale delle Ricerche, 
-via Golgi 19, 20133 Milano, Italy
-\\ \vspace{2px}
-$^3$Laboratoire de Chimie Physique Moleculaire, Swiss Federal Institute of Lausanne (EPFL),
-CH-1015 Lausanne, Switzerland
-\\ \vspace{2px}
-$^4$Laboratory of Theoretical Physical Chemistry, Institut des Sciences et Ingenierie Chimiques,\\
-Swiss Federal Institute of Technology Lausanne (EPFL), CH-1015 Lausanne, Switzerland
-\\ \vspace{2px}
-$^5$Dipartimento di Scienza ed Alta Tecnologia, Universita degli Studi dell'Insubria, via Valleggio 11,
-22100 Como, Italy
+$^2$Departament FQA, Facultat de F\'{\i}sica, and IN$^2$UB, Universitat de Barcelona. Diagonal 645, 08028 Barcelona, Spain
 
 }}
   % University logo
   {% The makebox allows the title to flow into the logo, this is a hack because of the L shaped logo.
-   \includegraphics[height=8.5em]{images/logo2}
+   \includegraphics[height=3.25em]{images/logo_irsamc}
   }
 
+\vspace{-20px}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Now define the boxes that make up the poster
 %%%---------------------------------------------------------------------------
@@ -196,47 +187,32 @@ $^5$Dipartimento di Scienza ed Alta Tecnologia, Universita degli Studi dell'Insu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{2px}  
 \scriptsize{
-\noindent Within TDDFT, we have addressed the dynamics of Ba$^+$ cations in helium nanodroplets. The absorption spectra from S to P and D states, as well as the emission spectra from P to S and D states of the cation are discussed. The appearance of exciplexes is discussed and the dynamics of the excited Ba$^+$ cation in the P state has been investigated.
+\noindent We study the head-on collision of a heliophilic xenon atom with a superfluid $^4$He droplet made of  1000  atoms.
+At variance with the findings for a heliophobic cesium atom of a similar atomic weight, 
+it is found that the xenon atom has to hit the droplet with a large kinetic energy in order to get across it without being captured. 
+When it is not captured,  the xenon impurity does not emerge as a bare atom; instead,
+due to its heliophilic character it carries away some helium atoms.
 }
-
 \vspace{2px}
  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Potentials}{name=potentials,column=0,row=0,span=1, below=abstract}{
+  \headerbox{Dynamic evolution}{name=potentials,column=0,row=0,span=1, below=abstract}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{2px}  
+%\vspace{2px}
 \scriptsize{
-
-\noindent For the $^2$P states, the pair potentials have been written as a direction-dependent combination of $\Pi$ and $\Sigma$ potentials
-
-\begin{equation*}
-	V_{\lambda}(\textbf{r}) = \langle\lambda\vert V(r)\vert\lambda\rangle = \sum_{ijss'}\lambda_{is}^{*}{\cal V}^{ijss'}(\textbf{r})\lambda_{js'},
-\end{equation*}
-
-\noindent where the six-dimentional matrix operator V has components
-
-\begin{equation*}
-	{\cal V}^{ijss'}(\textbf{r}) = \left[V_\Pi(r)\delta_{ij}+\left(V_\Sigma(r)-V_\Pi(r)\right)\frac{r_ir_j}{r^2}\right]\delta_{ss'}.
-\end{equation*}
-
-\begin{center}
-\includegraphics[width=0.87\linewidth]{Ppotential}\\
-
-\vspace{5px}
+\noindent Left panel: Xenon atom approaching the $^4$He$_{1000}$ droplet from below at $v_0=200$ m/s. The corresponding time is indicated in each frame.\\
+\vspace{-10px}
+\begin{center}  
+\includegraphics[width=0.410\linewidth]{Xe-vertical}
+\hspace{5px}
+\includegraphics[width=0.410\linewidth]{Cs-vertical}
 \end{center}
-
-\noindent Using a generalization of the method above, the corresponding potentials for the $^2$D states can be obtained
-
-\begin{center}
-\includegraphics[width=0.87\linewidth]{Dpotential}\\
-\end{center}
+\vspace{-10px}
+\noindent Right panel: Same as left figure for a Cs atom.
 }
-
-\noindent For both cases, the density used to calculate the potentials is the one showed in the top-left panel of each figure, corresponding to a turning point of the neutral Ba$^+$ dynamics.
-
-\vspace{2px}
- }
+%\vspace{2px}
+}
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{DFT Framework $^{[1]}$}{name=DFT,column=1,row=0,span=2, below=abstract}{
@@ -277,22 +253,21 @@ $^5$Dipartimento di Scienza ed Alta Tecnologia, Universita degli Studi dell'Insu
  }
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{$^2$P$_{1/2}$ Dynamics}{name=dynamics,column=1,row=0,span=2, below=DFT}{
+  \headerbox{Configuration stability}{name=dynamics,column=1,row=0,span=2, below=DFT}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{2px}  
 \scriptsize{
-\noindent To solve the above equations initial values for the variables are required.
-We have chosen as starting configuration that corresponding to the turning
-point reached by the Ba$^+$ in the ground state 223 ps after the ionization of
-neutral Ba in the surface dimple state.$^{[2]}$
+\noindent Energy of the Xe@$^4$He$_{1000}$ complex as a function of the
+distance between  the Xe atom and the  COM of the droplet.
+Several two-dimensional helium densities and density profiles are shown for distances between 0 and 40 \AA{} in 5  \AA{} steps.
+Connected (dots) and disconnected (triangles) helium configurations are shown \emph{(see text)}.
+Top left inset: Snapshot of the helium density at the
+first turning point  during the dynamic evolution of a Xe atom (green dot)  at  $v_0 = 600$ m/s 
+attained  78 ps after it has started.
 \begin{center}
-\includegraphics[width=0.82\linewidth]{return}\\
+\includegraphics[width=0.82\linewidth]{Xe-4He1000-constraint}\\
 \end{center}
 
-\noindent We have also followed the dynamic evolution of some particular configurations, like a metastable stretched configuration corresponding to $z_0 = 44.6 \AA$.
-\begin{center}
-\includegraphics[width=0.82\linewidth]{stretched}\\
-\end{center}
 }
 
 \vspace{2px}
@@ -305,18 +280,19 @@ neutral Ba in the surface dimple state.$^{[2]}$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{2px}  
 \scriptsize{
-\noindent We have calculated the absorption and emission spectra of Ba$^+$ between the ground state and $^2$P and $^2$D manifolds. The absorption spectrum and some preliminary results on the emission spectra are shown in the figure below.
-
+\noindent Kinetic and total (kinetic plus potential) energy as a function of time of a Xe atom head-on colliding against a $^4$He$_{1000}$ 
+droplet at $v_0=200$ m/s (left most figure), and the same for a Cs atom (middle figure). The vertical arrows indicate the first two turning points
+at 59 and 145 ps.
+\vspace{-5px}
 \begin{center}
-\includegraphics[width=0.33\linewidth]{absSP2}
-\includegraphics[width=0.33\linewidth]{emission}
-\includegraphics[width=0.33\linewidth]{PD}
+\includegraphics[width=0.33\linewidth]{fig3-Xe-He}
+\includegraphics[width=0.33\linewidth]{fig3-Cs-He}
+\includegraphics[width=0.33\linewidth]{Phase}
 \end{center}
+\vspace{-10px}
+\noindent On the right a phase-diagram is shown that demonstrates that the average velocity of the Xe atom in the droplet is lower than Landau's critical velocity and that is is also independent of the initial velocity.
 }
-
-\noindent In the absorption spectrum (left panel) the dashed line corresponds to the calculated spectrum while the solid one shows the experimental results. The center panel shows the S $\longleftarrow$ P emission spectrum, where the coloured solid lines represents the emission lines and in order to compare, the dotted one shows the experimental absorption spectrum. The D $\longleftarrow$ P emission spectrum is shown in the right panel. In the three panels, the vertical solid lines represent the persistent lines of singly ionized barium in the gas phase and the vertical dashed lines indicate the experimental peaks found in this energy region.$^{[3]}$
-
-\vspace{2px}
+%\vspace{2px}
  }
  
 
