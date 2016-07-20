@@ -219,37 +219,23 @@ due to its heliophilic character it carries away some helium atoms.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{2px}  
 \scriptsize{
-\noindent The dynamic evolution of the electronic excited state of Ba$^+$ is described introducing an additional degree of freedom, a six-component vector $\vert\lambda\rangle$ written in terms of same basis for spin and angular momentum used for the SO interaction.
+\noindent The total energy of the Xe@$^4$He$_{1000}$ complex is written as
 
-\begin{equation*}
-\vert\lambda\rangle=\sum_{is}\lambda_{is}(i,s)
-\end{equation*}
-
-\noindent The total energy of the Ba$^+$@$^4$He$_{1000}$ complex suddenly excited to the $^2$P manifold is written as
-
-\begin{equation*}
-	E\left[\Psi,r_{Ba^+},\lambda\right]=\int dr \frac{\hbar^2}{2m_{He}}\vert\nabla\Psi\vert^2+\frac{p^2_{Ba^+}}{2m_{Ba^+}}
-	+\int dr \varepsilon_{He}\left[\rho\right]+\langle\lambda\vert V_{SO}\vert\lambda\rangle+\int dr\rho(r)V_\lambda\left(r-r_{Ba^+}\right)
-\end{equation*}
+\begin{align*}
+	E\left[\Psi,\mathbf{r}_{Xe}\right]=\int d\mathbf{r} \frac{\hbar^2}{2m_{He}}\vert\nabla\Psi\vert^2 + \frac{p^2_{Xe}}{2m_{Xe}}
+	+\int d\mathbf{r} \mathcal{E}\left(\rho\right) + \int d\mathbf{r}\rho(\mathbf{r})V_{Xe}\left(\mathbf{r}-\mathbf{r}_{Xe}\right)
+\end{align*}
 
 \noindent The following coupled 3D time-dependent system, resulting from the variation of the action, has to be solved to obtain the dynamical evolution
 
-\begin{equation*}
-	i\hbar\frac{\partial}{\partial t}\Psi_{He}=\left[-\frac{\hbar^2}{2m_{He}}\nabla^2+\frac{\delta\varepsilon_{He}}{\delta\rho(r)}
-	+V_\lambda\left(r-r_{Ba^+}\right)\right]\Psi_{He} \;\;\;\;\;\;\;\;\;\;\;\;\; , \;\;\;\;\;\;\;\;\;\;\;\;\; i\hbar\frac{\partial}{\partial t}\vert\lambda\rangle={\cal H}\vert\lambda\rangle
-\end{equation*}
+\begin{align*}
+	i\hbar\frac{\partial}{\partial t}\Psi_{He} &= \left[-\frac{\hbar^2}{2m_{He}}\nabla^2+\frac{\delta\mathcal{E}}{\delta\rho(r)}
+	+V_{Xe}\left(\mathbf{r}-\mathbf{r}_{Xe}\right)\right]\Psi_{He} \\
+	m_{Xe}\ddot{\mathbf{r}}_{Xe} &= -\nabla_{\mathbf{r}_{Xe}}\left[\int d\mathbf{r}\rho(\mathbf{r})V_{Xe}\left(\mathbf{r}-\mathbf{r}_{Xe}\right)\right] = -\int d\mathbf{r}\nabla\rho(\mathbf{r})V_{Xe}\left(\mathbf{r}-\mathbf{r}_{Xe}\right)
+\end{align*}
 
-\begin{equation*}
-	m_{Ba^+}\ddot{r}_{Ba^+}=-\nabla_{r_{Ba^+}}\left[\int dr\rho(r)V_\lambda\left(r-r_{Ba^+}\right)\right]=
-	-\int dr\nabla\rho(r)V_\lambda\left(r-r_{Ba^+}\right)
-\end{equation*}
-
-\noindent The electronic state Hamiltonian ${\cal H}$ is a 6$\times$6 matrix whose elements are given by
-\begin{equation*}
-	H^{ijss'}=\int dr\rho(r){\cal V}^{ijss'}\left(r-r_{Ba^+_0}\right)+V^{ijss'}_{SO}
-\end{equation*}
 }
-\vspace{-10px}
+\vspace{-0px}
  }
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -287,7 +273,7 @@ at 59 and 145 ps.
 \includegraphics[width=0.33\linewidth]{Phase}
 \end{center}
 \vspace{-5px}
-\noindent On the right a phase-diagram is shown that demonstrates that the average velocity of the Xe atom in the droplet is lower than Landau's critical velocity and that is is also independent of the initial velocity.
+\noindent On the far right a phase-diagram is shown that demonstrates that the average velocity of the Xe atom in the droplet is lower than the Landau critical velocity, and that it is independent of the initial velocity.
 
 }
 %\vspace{2px}
@@ -302,8 +288,7 @@ at 59 and 145 ps.
 \noindent [1] D. Mateo et al., PCCP \textbf{15}, 18388-18400 (2013) \\ 
 \\
 \noindent [2] D. Mateo et al., J. Chem. Phys. \textbf{140}, 131101 (2014)\\ 
-\\
-\noindent [3] H.J. Reyher et al. Phys. Lett. A \textbf{115}, 238 (1986). \\ 
+
 }
 
 \vspace{2px}
