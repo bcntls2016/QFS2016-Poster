@@ -166,7 +166,8 @@ $^2$Departament FQA, Facultat de F\'{\i}sica, and IN$^2$UB, Universitat de Barce
    \includegraphics[height=3.25em]{images/logo_irsamc}
   }
 
-\vspace{-20px}
+%\vspace{-20px}
+\vspace*{0px}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Now define the boxes that make up the poster
 %%%---------------------------------------------------------------------------
@@ -185,10 +186,10 @@ $^2$Departament FQA, Facultat de F\'{\i}sica, and IN$^2$UB, Universitat de Barce
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Abstract}{name=abstract,column=0,row=0,span=3}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{2px}  
+%\vspace{2px}  
 \scriptsize{
-\noindent We study the head-on collision of a heliophilic xenon atom with a superfluid $^4$He droplet made of  1000  atoms.
-At variance with the findings for a heliophobic cesium atom of a similar atomic weight, 
+\noindent In the context of dopant dynamics in superfluid helium droplets in vortical states$^1$, we study the head-on collision of a heliophilic xenon atom with a superfluid $^4$He droplet made of  1000  atoms. 
+At variance with the findings for a heliophobic cesium atom$^2$ of a similar atomic weight, 
 it is found that the xenon atom has to hit the droplet with a large kinetic energy in order to get across it without being captured. 
 When it is not captured,  the xenon impurity does not emerge as a bare atom; instead,
 due to its heliophilic character it carries away some helium atoms.
@@ -201,17 +202,16 @@ due to its heliophilic character it carries away some helium atoms.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace{2px}
 \scriptsize{
-\noindent Left panel: Xenon atom approaching the $^4$He$_{1000}$ droplet from below at $v_0=200$ m/s. The corresponding time is indicated in each frame.\\
+\noindent Left panel: Xenon atom approaching the $^4$He$_{1000}$ droplet from below at $v_0=200$ m/s. The corresponding time is indicated in each frame. Right panel: Same as left figure for a Cs atom.\\
 \vspace{-10px}
 \begin{center}  
 \includegraphics[width=0.410\linewidth]{Xe-vertical}
 \hspace{5px}
 \includegraphics[width=0.410\linewidth]{Cs-vertical}
 \end{center}
-\vspace{-10px}
-\noindent Right panel: Same as left figure for a Cs atom.
+
 }
-%\vspace{2px}
+\vspace{2px}
 }
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,19 +219,19 @@ due to its heliophilic character it carries away some helium atoms.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{2px}  
 \scriptsize{
-\noindent The total energy of the Xe@$^4$He$_{1000}$ complex is written as
+\noindent The total energy of the Xe@$^4$He$_{1000}$ complex is based on the density-functional from Ref. [3] and is written as
 
 \begin{align*}
-	E\left[\Psi,\mathbf{r}_{Xe}\right]=\int d\mathbf{r} \frac{\hbar^2}{2m_{He}}\vert\nabla\Psi\vert^2 + \frac{p^2_{Xe}}{2m_{Xe}}
-	+\int d\mathbf{r} \mathcal{E}\left(\rho\right) + \int d\mathbf{r}\rho(\mathbf{r})V_{Xe}\left(\mathbf{r}-\mathbf{r}_{Xe}\right)
+	E[\Psi, \mathbf{r}_{Xe}] = \int d \mathbf{r} \, \frac{\hbar^2}{2m}|\nabla \Psi|^2 + \frac{p^2_{Xe}}{2 m_{Xe}} + \int d \mathbf{r} \, {\cal E}_{He}(\rho)
++ \int d \mathbf{r} \, \rho(\mathbf{r}) \,  V_X(|\mathbf{r}- \mathbf{r}_{Xe}|),
 \end{align*}
-
-\noindent The following coupled 3D time-dependent system, resulting from the variation of the action, has to be solved to obtain the dynamical evolution
+\noindent where ${\cal E}_{\mathrm{He}}$ is the potential energy per unit volume and $ V_X$ the Xe-He pair potential$^4$.\\
+\\
+\noindent The following coupled 3D time-dependent system, resulting from the variation of the action, has to be solved to obtain the dynamical evolution. Here the He droplet is represented by a complex effective wave function $\Psi_{\mathrm{He}}(\mathbf{r},t)$; the Xe atom is represented by its classical position  $\mathbf{r}_{\mathrm{Xe}}(t)$ obeying Newton's equation of motion
 
 \begin{align*}
-	i\hbar\frac{\partial}{\partial t}\Psi_{He} &= \left[-\frac{\hbar^2}{2m_{He}}\nabla^2+\frac{\delta\mathcal{E}}{\delta\rho(r)}
-	+V_{Xe}\left(\mathbf{r}-\mathbf{r}_{Xe}\right)\right]\Psi_{He} \\
-	m_{Xe}\ddot{\mathbf{r}}_{Xe} &= -\nabla_{\mathbf{r}_{Xe}}\left[\int d\mathbf{r}\rho(\mathbf{r})V_{Xe}\left(\mathbf{r}-\mathbf{r}_{Xe}\right)\right] = -\int d\mathbf{r}\nabla\rho(\mathbf{r})V_{Xe}\left(\mathbf{r}-\mathbf{r}_{Xe}\right)
+	i\hbar\frac{\partial}{\partial t} \Psi_{\mathrm{He}} &= \left[-\frac{\hbar^2}{2m_{\mathrm{He}}}\nabla^2 + \frac{\delta {\cal E}_{\mathrm{He}}}{\delta \rho(\mathbf{r})} + V_X(|\mathbf{r}- \mathbf{r}_{\mathrm{Xe}}|) \right] \Psi_{\mathrm{He}} \\
+	m_{\mathrm{Xe}} \ddot{\mathbf{r}}_{\mathrm{Xe}} &= - \nabla_{\mathbf{r}_{\mathrm{Xe}}} \left[ \int d \mathbf{r} \rho(\mathbf{r}) V_X(|\mathbf{r}- \mathbf{r}_{\mathrm{Xe}}|) \right] = -  \int d \mathbf{r} [\nabla \rho(\mathbf{r})] V_X(|\mathbf{r}- \mathbf{r}_{\mathrm{Xe}}|).
 \end{align*}
 
 }
@@ -259,24 +259,24 @@ attained  78 ps after it has started.
  }
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Absorption spectrum and preliminary results on emission spectra}{name=spectra,column=1,span=2, below=dynamics, above=bottom}{
+  \headerbox{Energetics and phase-space}{name=spectra,column=1,span=2, below=dynamics, above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{2px}  
+\vspace{5px}  
 \scriptsize{
 \noindent Kinetic and total (kinetic plus potential) energy as a function of time of a Xe atom head-on colliding against a $^4$He$_{1000}$ 
 droplet at $v_0=200$ m/s (left most figure), and the same for a Cs atom (middle figure). The vertical arrows indicate the first two turning points
 at 59 and 145 ps.
-\vspace{-5px}
+%\vspace{-5px}
 \begin{center}
 \includegraphics[width=0.33\linewidth]{fig3-Xe-He}
 \includegraphics[width=0.33\linewidth]{fig3-Cs-He}
 \includegraphics[width=0.33\linewidth]{Phase}
 \end{center}
-\vspace{-5px}
+%\vspace{-5px}
 \noindent On the far right a phase-diagram is shown that demonstrates that the average velocity of the Xe atom in the droplet is lower than the Landau critical velocity, and that it is independent of the initial velocity.
 
 }
-%\vspace{2px}
+\vspace{5px}
  }
  
 
@@ -285,15 +285,15 @@ at 59 and 145 ps.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{2px}  
 \scriptsize{ \vspace{2px}
-\noindent [1] D. Mateo et al., PCCP \textbf{15}, 18388-18400 (2013) \\ 
-\\
-\noindent [2] D. Mateo et al., J. Chem. Phys. \textbf{140}, 131101 (2014)\\ 
+\noindent [1] L.F. Gomez et al., Science \textbf{345}, 906 (2014) \\ 
+\noindent [2] A. Leal, D. Mateo, A. Hernando, M. Pi, M. Barranco, Phys. Chem. Chem. Phys. \textbf{16}, 23206 (2014)\\
+\noindent [3] F. Ancilotto, M. Barranco, F. Caupin, R. Mayol, M. Pi, Phys. Rev. B  \textbf{72}, 214522 (2005) \\
+\noindent [4] K.T. Tang, J.P. Toennies, Z. Phys. D \textbf{1}, 91 (1986)
 
 }
 
 \vspace{2px}
  }
-
  
 \end{poster}
 
